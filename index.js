@@ -9,10 +9,6 @@ for (let i = 0; i < btnForm.length; i++) {
   btnForm[i].appendChild(buyBtn.cloneNode(true));
 }
 
-document.getElementById("confirm-btn").addEventListener("click", () => {
-  alert("Thank you for buying from us!");
-});
-
 const faqContainer = document.getElementsByClassName("content-container");
 
 for (let i = 0; i < faqContainer.length; i++) {
@@ -20,6 +16,10 @@ for (let i = 0; i < faqContainer.length; i++) {
     this.classList.toggle("active");
   });
 }
+
+document.getElementById("confirm-btn").addEventListener("click", () => {
+  alert("Thank you for buying from us!");
+});
 
 const dateChange = new Date().getFullYear();
 document.querySelectorAll("#footer-date")[0].innerHTML = dateChange;
