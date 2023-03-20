@@ -1,4 +1,4 @@
-const btnForm = document.getElementsByClassName("form");
+const btnForm = document.querySelectorAll(".form");
 const buyBtn = document.createElement("button");
 buyBtn.innerHTML = "Buy Item";
 buyBtn.type = "submit";
@@ -9,7 +9,7 @@ for (let i = 0; i < btnForm.length; i++) {
   btnForm[i].appendChild(buyBtn.cloneNode(true));
 }
 
-const faqContainer = document.getElementsByClassName("content-container");
+const faqContainer = document.querySelectorAll(".content-container");
 
 for (let i = 0; i < faqContainer.length; i++) {
   faqContainer[i].addEventListener("click", function () {
@@ -17,7 +17,7 @@ for (let i = 0; i < faqContainer.length; i++) {
   });
 }
 
-document.getElementById("confirm-btn").addEventListener("click", () => {
+document.getElementById("confirm-btn").addEventListener("click", function () {
   alert("Thank you for buying from us!");
 });
 
