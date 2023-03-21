@@ -17,9 +17,5 @@ for (let i = 0; i < faqContainer.length; i++) {
   });
 }
 
-document.getElementById("confirm-btn").addEventListener("click", function () {
-  alert("Thank you for buying from us!");
-});
-
 const dateChange = new Date().getFullYear();
 document.querySelectorAll("#footer-date")[0].innerHTML = dateChange;
