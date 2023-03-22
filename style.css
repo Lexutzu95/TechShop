@@ -7,7 +7,7 @@
 
 html {
   position: relative;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -270,14 +270,12 @@ footer {
 
 .confirmation-form {
   background-color: hsla(34, 78%, 91%, 0.2);
-  width: 45%;
-  position: absolute;
-  top: 25%;
-  left: 25%;
+  min-width: 45%;
   display: table;
   border: 3px double hsl(34, 78%, 91%);
   border-radius: 13px;
   padding: 25px 15px;
+  margin: auto;
   font-size: 1.2rem;
 }
 
@@ -332,6 +330,10 @@ input[type="tel"]:focus {
 }
 
 @media screen and (max-width: 600px) {
+  .title-div {
+    margin: 20px 5px;
+  }
+
   .welcome {
     font-size: 1.3rem;
   }
@@ -367,18 +369,14 @@ input[type="tel"]:focus {
     height: 95%;
   }
 
-  .confirmation-form {
-    width: 90%;
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    display: table;
-    padding: 25px 15px;
-    font-size: 1.2rem;
-  }
-
   .faq-container {
     margin-bottom: 15vh;
+  }
+
+  .confirmation-form {
+    width: 50%;
+    margin: auto;
+    padding: 15px;
   }
 
   input[type="tel"] {
@@ -397,7 +395,7 @@ input[type="tel"]:focus {
   }
 
   input[type="button"] {
-    width: 15rem;
+    width: 10rem;
     padding: 2px;
   }
 }
