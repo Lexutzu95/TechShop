@@ -41,7 +41,7 @@ body {
 }
 
 #website-title:link {
-  font-size: 32px;
+  font-size: 2.5rem;
   font-weight: bold;
   text-decoration: none;
 }
@@ -239,7 +239,7 @@ footer {
 .faq-container .content-container .question-container::after {
   content: "+";
   position: absolute;
-  right: -10px;
+  right: 10px;
 }
 
 .faq-container .content-container .answer-container {
@@ -259,7 +259,7 @@ footer {
 }
 
 .faq-container .content-container.active .answer-container {
-  height: 100%;
+  height: 160px;
 }
 
 .faq-container .content-container.active .question-container::after {
@@ -268,17 +268,16 @@ footer {
   transition: 0.7s;
 }
 
-.customer-form {
-  width: 65vw;
-  height: 75vh;
+.confirmation-form {
+  background-color: hsla(34, 78%, 91%, 0.2);
+  width: 45%;
   position: absolute;
-  top: 20vh;
-  left: 20vw;
-  right: 20vw;
-  display: block;
-  border: 5px double hsl(34, 78%, 91%);
+  top: 25%;
+  left: 25%;
+  display: table;
+  border: 3px double hsl(34, 78%, 91%);
   border-radius: 13px;
-  padding: 25px 20px;
+  padding: 25px 15px;
   font-size: 1.2rem;
 }
 
@@ -308,8 +307,9 @@ input[type="radio"] {
 }
 
 input[type="button"] {
-  width: 50%;
-  margin: 3% 25%;
+  width: 15rem;
+  padding: 2px;
+  margin: 5% 30%;
   background-color: hsla(189, 100%, 56%, 0.9);
   border-radius: 5px;
   font-size: 1rem;
@@ -317,9 +317,9 @@ input[type="button"] {
 }
 
 input[type="button"]:active {
-  width: 50%;
+  width: 15rem;
   display: block;
-  margin: 3% 25%;
+  margin: 5% 30%;
   background: hsla(160, 100%, 75%, 0.9);
   border-radius: 5px;
   font-size: 1rem;
@@ -366,33 +366,28 @@ input[type="tel"]:focus {
     height: 95%;
   }
 
-  .customer-form {
-    width: 100%;
-    height: 65%;
-    position: absolute;
-    top: 5vh;
-    left: 5vw;
-    right: 5vw;
-    display: block;
-    border: 5px double hsl(34, 78%, 91%);
-    border-radius: 13px;
-    padding: 25px 10px;
-    font-size: 1.2rem;
-  }
-
   input[type="radio"] {
-    width: 25%;
+    width: 40%;
     margin-right: 0;
     display: block;
   }
 
   input[type="button"] {
-    width: 70%;
-    font-size: 1rem;
+    width: 8rem;
+    padding: 2px;
+    margin: 10px;
+  }
+
+  input[type="tel"] {
+    width: 95%;
   }
 }
 
 @media screen and (max-width: 600px) {
+  .welcome {
+    font-size: 1.3rem;
+  }
+
   .nav-bar li {
     width: 100%;
     text-align: center;
@@ -424,17 +419,13 @@ input[type="tel"]:focus {
     height: 95%;
   }
 
-  .customer-form {
-    width: 85vw;
-    height: 75vh;
+  .confirmation-form {
+    width: 95svw;
     position: absolute;
-    top: 5vh;
-    left: 10vw;
-    right: 10vw;
-    display: block;
-    border: 5px double hsl(34, 78%, 91%);
-    border-radius: 13px;
-    padding: 25px 20px;
+    top: 20%;
+    left: 15%;
+    display: table;
+    padding: 25px 15px;
     font-size: 1.2rem;
   }
 
@@ -443,7 +434,7 @@ input[type="tel"]:focus {
   }
 
   input[type="tel"] {
-    width: 75%;
+    width: 95%;
     display: block;
     margin: 0 8%;
     background: hsla(189, 100%, 56%, 0.9);
@@ -452,9 +443,14 @@ input[type="tel"]:focus {
   }
 
   input[type="radio"] {
-    width: 55vw;
+    width: 60svw;
     margin-right: 0;
     display: block;
+  }
+
+  input[type="button"] {
+    width: 10rem;
+    padding: 2px;
   }
 }
 
@@ -463,16 +459,12 @@ input[type="tel"]:focus {
     margin-bottom: 4%;
   }
 
-  .customer-form {
-    width: 65vw;
-    height: 40vh;
+  .confirmation-form {
+    width: 75svw;
     position: absolute;
-    top: 25vh;
-    left: 20vw;
-    right: 20vw;
+    top: 20%;
+    left: 6rem;
     display: block;
-    border: 5px double hsl(34, 78%, 91%);
-    border-radius: 13px;
     padding: 25px 20px;
     font-size: 1.2rem;
   }
@@ -500,6 +492,11 @@ input[type="tel"]:focus {
     margin-bottom: 3vh;
     display: inline-block;
   }
+
+  input[type="button"] {
+    width: 15rem;
+    padding: 2px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -519,24 +516,15 @@ input[type="tel"]:focus {
     margin: 1% 1%;
   }
 
-  .customer-form {
-    width: 65vw;
-    height: 70vh;
-    position: absolute;
-    top: 20vh;
-    left: 20vw;
-    right: 20vw;
-    display: block;
-    border: 5px double hsl(34, 78%, 91%);
-    border-radius: 13px;
-    padding: 25px 20px;
-    font-size: 1.2rem;
-  }
-
   input[type="radio"] {
     width: 20%;
     margin-bottom: 3vh;
     display: inline-block;
+  }
+
+  input[type="button"] {
+    width: 10rem;
+    padding: 2px;
   }
 }
 
@@ -545,19 +533,5 @@ input[type="tel"]:focus {
     width: 20%;
     margin-right: 0;
     display: inline-block;
-  }
-
-  .customer-form {
-    width: 65vw;
-    height: 90vh;
-    position: absolute;
-    top: 20vh;
-    left: 20vw;
-    right: 20vw;
-    display: block;
-    border: 5px double hsl(34, 78%, 91%);
-    border-radius: 13px;
-    padding: 25px 20px;
-    font-size: 1.2rem;
   }
 }
