@@ -317,8 +317,6 @@ input[type="button"] {
 }
 
 input[type="button"]:active {
-  width: 15rem;
-  display: block;
   margin: 5% 30%;
   background: hsla(160, 100%, 75%, 0.9);
   border-radius: 5px;
