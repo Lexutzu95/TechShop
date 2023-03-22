@@ -399,7 +399,7 @@ input[type="tel"]:focus {
   }
 
   input[type="button"] {
-    width: 10rem;
+    width: 15rem;
     padding: 2px;
   }
 }
