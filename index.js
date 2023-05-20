@@ -18,4 +18,4 @@ for (let i = 0; i < faqContainer.length; i++) {
 }
 
 const dateChange = new Date().getFullYear();
-document.querySelectorAll("#footer-date")[0].innerHTML = dateChange;
+document.querySelector("#footer-date").innerHTML = dateChange;
